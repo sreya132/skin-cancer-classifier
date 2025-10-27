@@ -7,18 +7,61 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependency directories
+node_modules/
 
-# Editor directories and files
+# Build outputs
+dist/
+dist-ssr/
+build/
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Test coverage
+coverage/
+
+# TypeScript build artifacts
+*.tsbuildinfo
+
+# Temporary files
+*.tmp
+*.temp
+
+# Python related (for ML models or scripts)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints/
+
+# Model files or datasets (if any)
+*.h5
+*.pkl
+*.pt
+*.pth
+*.onnx
+*.joblib
+*.csv
+*.zip
+*.tar
+*.tar.gz
+
+# Miscellaneous
+*.local
